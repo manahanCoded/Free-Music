@@ -14,6 +14,7 @@ body{
 
 }
 
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -68,9 +69,13 @@ body{
 .front_page_left_side h2{
     font-size: 7vh;
     margin: 30px 0px 0px 0px;
+
 }
 .front_page_left_side p{
-    line-height: 0.5;
+    line-height: 0.7;
+    text-align: justify;
+    margin-left: 50px;
+    font-size: 5vh;
 }
 
 .search_page{
@@ -105,6 +110,30 @@ form{
     margin-left: 10px;
     
     
+}
+
+
+/* Music Right Page Section*/
+
+.player{
+   background-color: grey;
+   grid-template-columns: 1fr 2fr;
+   display: grid;
+   padding: 2vh;
+   border-radius: 50px;
+}
+.player_img img{
+    height: 25vh;
+}
+.player_settings{
+
+}
+audio{
+    height: 10vh;
+    width: 50vh;
+}
+.controls{
+    font-size: 4vh;
 }
 
 /* Front Right Page Section*/
