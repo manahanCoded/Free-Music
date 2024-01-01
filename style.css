@@ -54,6 +54,9 @@ body{
     text-align: center;
     position: sticky;
     top: 100px;
+    justify-content: center;
+    align-items: center;
+
 
 }
 .front_page_left_side h1{
@@ -115,26 +118,24 @@ form{
 
 /* Music Right Page Section*/
 
-.player{
-   background-color: grey;
-   grid-template-columns: 1fr 2fr;
-   display: grid;
-   padding: 2vh;
-   border-radius: 50px;
+.player .card{
+   width: 100vh;
+   margin-left: 30px;
 }
-.player_img img{
-    height: 25vh;
-}
-.player_settings{
+.col-md-4{
+    position: relative;
+    background: rgba(0,0,0,.1);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 10px 10px rgba(0,0,0,.15);
+    transition: all .4s ease;
 
+  }
+.col-md-4:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 20px 20px rgba(0,0,0,.25);
 }
-audio{
-    height: 10vh;
-    width: 50vh;
-}
-.controls{
-    font-size: 4vh;
-}
+
 
 /* Front Right Page Section*/
 .front_page_right_side p{
@@ -175,6 +176,7 @@ audio{
 .img {
     position: relative;
 }
+
 .card:hover{
     background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     color: black;
@@ -182,3 +184,82 @@ audio{
     transform: scale(1.05); 
     transition: all .5s ease-in-out; 
 }
+.trending:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 20px 20px rgba(0,0,0,.25);
+}
+
+
+/* Downlaod Page Section*/
+
+.download_container{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    
+
+}
+.download_section{
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; 
+    color: black;
+    border-radius: 30px;
+    height: 80%;
+    font-size: 3vh;
+    
+}
+
+.download_body{
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    gap: 30px;
+}
+
+.download_header{
+    display: flex;
+    justify-content: space-between;   
+}
+.download_header h2{
+    font-size: 7vh;
+}
+.download_pic img{
+    height: 50vh;
+}
+
+
+
+
+
+.download_info{
+    margin-top: 5vh;
+}
+.download_info h1{
+    
+    font-size: 20vh;
+    line-height: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
