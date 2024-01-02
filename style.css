@@ -66,7 +66,7 @@ body{
 
 }
 .front_page_left_side i{
-    font-size: 9vh;
+    font-size: 10vh;
 
 }
 .front_page_left_side h2{
@@ -191,7 +191,9 @@ form{
 
 
 /* Downlaod Page Section*/
-
+.hide{
+    display: none;
+}
 .download_container{
     position: fixed;
     z-index: 1;
@@ -202,7 +204,6 @@ form{
     overflow: auto;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4);
-    display: none;
     
 
 }
@@ -211,9 +212,9 @@ form{
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; 
-    color: black;
+    color: #365486;
     border-radius: 30px;
-    height: 80%;
+    height: 80vh;
     font-size: 3vh;
     
 }
@@ -222,6 +223,7 @@ form{
     grid-template-columns: 1fr 2fr;
     display: grid;
     gap: 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 .download_header{
@@ -231,26 +233,70 @@ form{
 .download_header h2{
     font-size: 7vh;
 }
+
 .download_pic img{
     height: 50vh;
 }
 
 
 
-
-
 .download_info{
-    margin-top: 5vh;
+    margin-top: 3vh;
+
 }
 .download_info h1{
     
-    font-size: 20vh;
+    font-size: 15vh;
     line-height: 0.5;
+
+}
+.download_info h3{
+    font-size: 8vh;
 }
 
+.download_info a{
+    font-size: 5vh;
+    color: red;
+    text-decoration: none;
+}
+.download_info i{
+    font-size: 4vh;
+}
+.download_info a:hover {
+   text-decoration: underline;
+}
+
+.download{
+    display: flex;
+    align-self: end;
+    justify-self: end;
+    position: relative;
+    top: 30%;
+    left: 30%;  
+    width: 60vh;  
+    color: white;
+   
+  
+ }
+ .download_info_download{
+
+    background-color: #7FC7D9;
+    font-size: 5vh;
+    color: white;
+    border-radius: 10px;
+    width: 30vh;
+ }
 
 
-
+ /*footer container*/
+ .footer_container{
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  font-size: 5vh;
+ }
+.footer_container i, ul li{
+    font-size: 4vh;
+}
 
 
 
